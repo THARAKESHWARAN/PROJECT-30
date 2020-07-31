@@ -37,45 +37,45 @@ function setup() {
   poly = new Polygons(150, 300);
   polyConstraint = new SlingShot(poly.body, { x: 150, y: 300 });
 
-  box1  = new Box(400, 360, "red");
-  box2  = new Box(430, 360, "red");
-  box3  = new Box(460, 360, "red");
-  box4  = new Box(490, 360, "red");
-  box5  = new Box(520, 360, "red");
-  box6  = new Box(550, 360, "red");
-  box7  = new Box(580, 360, "red");
+  box1  = new Box(400, 365, "red");
+  box2  = new Box(430, 365, "red");
+  box3  = new Box(460, 365, "red");
+  box4  = new Box(490, 365, "red");
+  box5  = new Box(520, 365, "red");
+  box6  = new Box(550, 365, "red");
+  box7  = new Box(580, 365, "red");
 
-  box8  = new Box(430, 330, "blue");
-  box9  = new Box(460, 330, "blue");
-  box10 = new Box(490, 330, "blue");
-  box11 = new Box(520, 330, "blue");
-  box12 = new Box(550, 330, "blue");
+  box8  = new Box(430, 315, "blue");
+  box9  = new Box(460, 315, "blue");
+  box10 = new Box(490, 315, "blue");
+  box11 = new Box(520, 315, "blue");
+  box12 = new Box(550, 315, "blue");
 
-  box13 = new Box(460, 300, "green");
-  box14 = new Box(490, 300, "green");
-  box15 = new Box(520, 300, "green");
+  box13 = new Box(460, 265, "green");
+  box14 = new Box(490, 265, "green");
+  box15 = new Box(520, 265, "green");
 
-  box16 = new Box(490, 270, "white");
+  box16 = new Box(490, 220, "white");
 
-  box17 = new Box(930, 190, "red");
-  box18 = new Box(960, 190, "red");
-  box19 = new Box(990, 190, "red");
-  box20 = new Box(1020, 190, "red");
-  box21 = new Box(1050, 190, "red");
-  box22 = new Box(1080, 190, "red");
-  box23 = new Box(1110, 190, "red");
+  box17 = new Box(930, 215, "red");
+  box18 = new Box(960, 215, "red");
+  box19 = new Box(990, 215, "red");
+  box20 = new Box(1020, 215, "red");
+  box21 = new Box(1050, 215, "red");
+  box22 = new Box(1080, 215, "red");
+  box23 = new Box(1110, 215, "red");
 
-  box24 = new Box(960, 160, "blue");
-  box25 = new Box(990, 160, "blue");
-  box26 = new Box(1020, 160, "blue");
-  box27 = new Box(1050, 160, "blue");
-  box28 = new Box(1080, 160, "blue");
+  box24 = new Box(960, 165, "blue");
+  box25 = new Box(990, 165, "blue");
+  box26 = new Box(1020, 165, "blue");
+  box27 = new Box(1050, 165, "blue");
+  box28 = new Box(1080, 165, "blue");
 
-  box29 = new Box(990, 130, "green");
-  box30 = new Box(1020, 130, "green");
-  box31 = new Box(1050, 130, "green");
+  box29 = new Box(990, 115, "green");
+  box30 = new Box(1020, 115, "green");
+  box31 = new Box(1050, 115, "green");
 
-  box32 = new Box(1020, 100, "white");
+  box32 = new Box(1020, 70, "white");
 
   Engine.run(engine);
 
@@ -86,6 +86,8 @@ function draw() {
 
   base1.display();
   base2.display();
+
+  console.log(box1.body.speed)
 
   poly.display();
   polyConstraint.display();
